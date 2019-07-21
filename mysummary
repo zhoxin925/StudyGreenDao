@@ -1,0 +1,25 @@
+关于GreenDao的学习记录总结
+
+ORM: object relation mapping,将数据库中的数据映射成代码中的一个对象Objects
+关系型 --- 对象
+
+1.导入包
+    工程build.gradle下:
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' //加这一行代码
+    }
+
+    module的build.gradle下:
+    apply plugin: 'org.greenrobot.greendao'
+    dependencies {
+        ...
+        implementation 'org.greenrobot:greendao:3.2.2'
+    }
+    greendao {
+        schemaVersion 1      //数据库版本号
+        daoPackage 'com.example.studygreendao.greendao'
+        targetGenDir 'src/main/java'      // 设置DaoMaster、DaoSession、Dao 包名
+    }
+
+2.

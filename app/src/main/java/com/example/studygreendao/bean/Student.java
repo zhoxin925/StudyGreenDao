@@ -88,4 +88,19 @@ public class Student {
     public void setGrade(String grade) {
         this.grade = grade;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", studentNo=" + studentNo +
+                ", age=" + age +
+                ", telPhone='" + telPhone + '\'' +
+                ", sex='" + sex + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", schoolName='" + schoolName + '\'' +
+                ", grade='" + grade + '\'' +
+                '}';
+    }
 }

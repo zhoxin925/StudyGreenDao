@@ -28,12 +28,12 @@ android {
     }
 }
 
-greendao {
-    schemaVersion 1 //数据库版本号
-    daoPackage 'com.example.studygreendao.greendao'
-    // 设置DaoMaster、DaoSession、Dao 包名
-    targetGenDir 'src/main/java'
-}
+//greendao {
+//    schemaVersion 1 //数据库版本号
+//    daoPackage 'com.example.studygreendao.greendao'
+//    // 设置DaoMaster、DaoSession、Dao 包名
+//    targetGenDir 'src/main/java'
+//}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
